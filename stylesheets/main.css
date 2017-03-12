@@ -2,6 +2,15 @@
 	box-sizing: border-box;
 }
 
+
+.name{
+	font-size: 25px;
+}
+
+ul.nav-main li {
+	font-size: 25px;
+}
+
 .nav-wrapper{
 	border-bottom: 1px solid #000;
 }
@@ -10,17 +19,23 @@
 	display: none;
 }
 
-.nav-main li{
-	border-bottom: 1px solid #000;
-}
 
 .nav-main li:last-child{
 	border-bottom-style: none;
 }
+.name,
+ul.nav-main li a{
+	display: inline-block;
+	padding: 30px;
+	border-bottom: 1px solid #000
+}
 
-.nav-main li a{
-	display: block;
-	padding: 20px;
+.name {
+	float: left;
+}
+
+ul.nav-main li{
+	float: right;
 }
 
 .nav-main li a.is-current{
@@ -29,6 +44,78 @@
 
 .hamburger {
 
+}
+
+/****************************************************
+SECTION: CONTACT	
+****************************************************/
+
+
+
+#page-contact {
+	/*background-image: url("../img/football-picture.jpg");*/
+	/*background-repeat: no-repeat;*/
+}
+
+.linkedin-icon,
+.facebook-icon,
+.gmail-icon{
+	width:100px;
+	height:100px;
+}
+
+.contact-info li {
+	list-style-position: none;
+}
+
+
+
+
+/***************************************************
+SECTION:RESUME
+***************************************************/
+
+#page-resume {
+	background-image: url("..img/chris-school.jpg");
+}
+
+.besco-container,
+.loehmanns-container{
+	font-size: 30px;
+	flex-wrap: wrap;
+	padding: 40px;
+}
+
+.besco-container{
+	margin-top: -15px;
+}
+
+.loehmanns-container{
+	margin-top: -15px;
+}
+
+ul.besco-resume li,
+ul.loehmanns-resume li{
+	padding-left: 35px;
+	list-style-type: disc;
+	list-style-position: outside;
+	margin: 10px;
+
+}
+
+
+/******************************************
+SECTION: PROJECTS
+******************************************/
+
+#page-projects {
+	background-image: url("img/chris-texas.jpg");
+}
+
+
+ul.links li{
+	font-size: 30px;
+	padding: 20px
 }
 
 /* Desktop version of our .nav-main */

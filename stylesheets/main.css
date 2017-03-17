@@ -7,22 +7,45 @@ body{
 	font-family: 'Graduate', cursive;
 
 }
-
+header{
+	background-image: url("../img/computer.jpg");
+	background-repeat: no-repeat;
+	overflow: auto;
+	background-size: cover;
+	height: 1000px
+}
+.nav-wrapper {
+	background-color: rgba(0,0,0, 0.6);
+}
 
 .name{
-	font-size: 25px;
+	font-size: 45px;
+	width: 100%;
+	color: white;
 }
 
 ul.nav-main li {
-	font-size: 25px;
+	font-size: 45px;
+
+}
+
+ul.nav-main li a{
+	color: white;
+}
+
+ul.nav-main li a:hover{
+	color: green;
 }
 
 .nav-wrapper{
 	border-bottom: 1px solid #000;
+
 }
+
 
 .nav-main {
 	display: none;
+	width: 50%;
 }
 
 
@@ -36,13 +59,13 @@ ul.nav-main li a{
 	border-bottom: 1px solid #000
 }
 
-.name {
-	float: left;
+.name,
+.nav-main{
+	background-color: rgba(0,0,0, 0.8)
 }
+	
 
-ul.nav-main li{
-	float: right;
-}
+
 
 .nav-main li a.is-current{
 	background-color: red;
@@ -127,8 +150,22 @@ ul.links li{
 /* Desktop version of our .nav-main */
 
 @media all and (min-width: 480px){
+	header{
+		/*border: 65px solid black;*/
+	}
+
+	.name {
+		display:inline-block;
+		width: 50%;
+		float: left;
+
+	}
+
 	.nav-main {
-		display: block;
+		display:inline-block;
+		width: 50%;
+		float: right;
+
 	}
 
 

@@ -26,7 +26,7 @@ OPW.utilities = {
 			$('.nav-main a').removeClass('is-current');
 			// add a class of 'is-current' to $(this) 
 			$(this).addClass('is-current');
-			// the 'this' keyword refers to the DOM element bein operated on
+			// the 'this' keyword refers to the DOM element being operated on
 			// $(this) is just 'this', wrapped in a jQuery selector
 			console.log($(this).attr('href'));
 			// store $(this).attr('href') in a variable
@@ -44,32 +44,35 @@ console.log(OPW);
 $(document).ready(function(){
 	OPW.utilities.listen();
 
-	var count = 0;
-	   var images = ["img/chris-school.jpg","img/chris-texas.jpg","img/football-picture.jpg","img/computer.jpg"];
-	   var header_background = $("header.background");
+	// var count = 0;
+	   // var images = ["img/chris-school.jpg","img/chris-texas.jpg","img/football-picture.jpg","img/computer.jpg"];
+	   // var header_background = $("header.background");
 
-	    header_background.css("background-image", "url("+images[count]+")");
-        setInterval(function(){
-        	 header_background.css("background-image", "url("+images[count]+")");
-        	 count++
-        	 if (count === images.length){
-        	 	count = 0;
-        	 }
-        	 console.log(count);
+	   //  header_background.css("background-image", "url("+images[count]+")");
+    //     setInterval(function(){
+    //     	 header_background.css("background-image", "url("+images[count]+")");
+    //     	 count++
+    //     	 if (count === images.length){
+    //     	 	count = 0;
+    //     	 }
+    //     	 console.log(count);
 
-        }, 6000)
+    //     }, 6000)
 
 	$(".click-contact").on('click', function() {
-		$(".contact-wrapper").fadeIn(3000);
+		$(".contact-wrapper").fadeIn(2000);
+		$(".click-contact").fadeOut(2000)
 	});
 
 
 	$(".click-resume").on('click', function() {
-		$(".resume-wrapper").fadeIn(3000);
+		$(".resume-wrapper").fadeIn(2000);
+		$(".click-resume").fadeOut(2000);
 	});
 
 	$(".click-project").on('click', function() {
-		$(".project-wrapper").fadeIn(3000);
+		$(".project-wrapper").fadeIn(2000);
+		$(".click-project").fadeOut(2000);
 	});
 
 

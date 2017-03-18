@@ -8,7 +8,7 @@ body{
 
 }
 header{
-	/*background-image: url("../img/computer.jpg");*/
+	background-image: url("../img/computer.jpg");
 	background-repeat: no-repeat;
 	overflow: auto;
 	background-size: cover;
@@ -19,13 +19,13 @@ header{
 }
 
 .name{
-	font-size: 45px;
+	font-size: 40px;
 	width: 100%;
 	color: white;
 }
 
 ul.nav-main li {
-	font-size: 45px;
+	font-size: 40px;
 
 }
 
@@ -73,12 +73,18 @@ ul.nav-main li a{
 }
 
 .hamburger {
-
+	color:white;
 }
 
 /****************************************************
 SECTION: CONTACT	
 ****************************************************/
+#page-contact{
+	background-color: green;
+}
+
+
+
 
 .click-contact{
 	display: block;
@@ -118,6 +124,12 @@ SECTION: CONTACT
 SECTION:RESUME
 ***************************************************/
 
+#page-resume {
+	background-color: black;
+	color: yellow;
+}
+
+
 .click-resume{
 	display: block;
 	text-align: center;
@@ -131,7 +143,7 @@ SECTION:RESUME
 
 .besco-container,
 .loehmanns-container{
-	font-size: 30px;
+	font-size: 25px;
 	flex-wrap: wrap;
 	padding: 40px;
 }
@@ -157,6 +169,11 @@ ul.loehmanns-resume li{
 /******************************************
 SECTION: PROJECTS
 ******************************************/
+
+#page-projects{
+	background-color: red;
+}
+
 .click-project{
 	display: block;
 	text-align: center;

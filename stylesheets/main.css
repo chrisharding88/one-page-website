@@ -8,7 +8,7 @@ body{
 
 }
 header{
-	background-image: url("../img/computer.jpg");
+	/*background-image: url("../img/computer.jpg");*/
 	background-repeat: no-repeat;
 	overflow: auto;
 	background-size: cover;
@@ -31,6 +31,7 @@ ul.nav-main li {
 
 ul.nav-main li a{
 	color: white;
+	text-decoration: none;
 }
 
 ul.nav-main li a:hover{
@@ -79,12 +80,25 @@ ul.nav-main li a{
 SECTION: CONTACT	
 ****************************************************/
 
-
-
-#page-contact {
-	/*background-image: url("../img/football-picture.jpg");*/
-	/*background-repeat: no-repeat;*/
+.click-contact{
+	display: block;
+	text-align: center;
+	margin-top: 350px;
+	font-size: 90px;
 }
+
+.click-contact: hover{
+	text-decoration: underline;
+}
+
+.top{
+	height: -60px
+}
+
+.contact-wrapper{
+   display: none;
+}
+
 
 .linkedin-icon,
 .facebook-icon,
@@ -104,8 +118,15 @@ SECTION: CONTACT
 SECTION:RESUME
 ***************************************************/
 
-#page-resume {
-	background-image: url("..img/chris-school.jpg");
+.click-resume{
+	display: block;
+	text-align: center;
+	margin-top: 350px;
+	font-size: 90px;
+}
+
+.resume-wrapper {
+	display: none;
 }
 
 .besco-container,
@@ -136,9 +157,15 @@ ul.loehmanns-resume li{
 /******************************************
 SECTION: PROJECTS
 ******************************************/
+.click-project{
+	display: block;
+	text-align: center;
+	margin-top: 350px;
+	font-size: 90px;
+}
 
-#page-projects {
-	background-image: url("img/chris-texas.jpg");
+.project-wrapper {
+	display: none;
 }
 
 

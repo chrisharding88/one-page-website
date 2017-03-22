@@ -35,6 +35,11 @@ OPW.utilities = {
 			$(window).scrollTo(pageToScrollTo, 2000);
 		});
 
+		 $('.top').on('click', function(event) {
+			 event.preventDefault();
+			 $(window).scrollTo('#header-top', 2000);
+		 })
+
 		
 	}
 
@@ -64,16 +69,33 @@ $(document).ready(function(){
 		$(".click-contact").fadeOut(2000)
 	});
 
+	$(".return-contact").on('click', function(event) {
+		event.preventDefault();
+		$(".click-contact").fadeIn(2000);
+		$(".contact-wrapper").fadeOut(2000)
+	})
 
 	$(".click-resume").on('click', function() {
 		$(".resume-wrapper").fadeIn(2000);
 		$(".click-resume").fadeOut(2000);
 	});
 
+	$(".return-resume").on('click', function(event) {
+		event.preventDefault();
+		$(".click-resume").fadeIn(2000);
+		$(".resume-wrapper").fadeOut(2000);
+	})
+
 	$(".click-project").on('click', function() {
 		$(".project-wrapper").fadeIn(2000);
 		$(".click-project").fadeOut(2000);
 	});
+
+	$(".return-project").on('click', function(event) {
+		event.preventDefault();
+		$(".click-project").fadeIn(2000);
+		$(".project-wrapper").fadeOut(2000)
+	})
 
 
 

@@ -133,6 +133,12 @@ SECTION: CONTACT
 	color: white;
 }
 
+.top,
+.return-contact
+ {
+ 	padding-left:25px;
+}
+
 
 
 
@@ -184,6 +190,10 @@ ul.loehmanns-resume li{
 
 }
 
+.return-resume{
+	padding-left: 25px
+}
+
 
 /******************************************
 SECTION: PROJECTS
@@ -211,6 +221,10 @@ SECTION: PROJECTS
 ul.links li{
 	font-size: 30px;
 	padding: 35px
+}
+
+.return-project{
+	padding-left:25px;
 }
 
 /* Desktop version of our .nav-main */
@@ -249,4 +263,5 @@ section {
 	min-height: 600px;\
 	border-bottom:1px solid;
 	position: relative;
+	padding-top: 20px;
 }
